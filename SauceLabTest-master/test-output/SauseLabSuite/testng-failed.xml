@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SauseLabSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="ProductsTest(failed)">
+    <classes>
+      <class name="Tests.TestProduct">
+        <methods>
+          <include name="TC_remove_001_testremovetocart"/>
+          <include name="TC_add_001_testaddtocart"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Tests.TestProduct -->
+    </classes>
+  </test> <!-- ProductsTest(failed) -->
+</suite> <!-- Failed suite [SauseLabSuite] -->
