@@ -9,12 +9,36 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">SauseLabSuite</th></tr>
-<tr><td><a href="#t0">ProductsTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,806</td><td></td><td></td></tr>
+<tr><td><a href="#t0">ProductsTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">16,949</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SauseLabSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ProductsTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Tests.TestProduct</td><td><a href="#m0">Login</a></td><td rowspan="1">1747306924031</td><td rowspan="1">7967</td></tr><tr class="passedeven"><td><a href="#m1">TC_add_001_testaddtocart</a></td><td rowspan="1">1747306932027</td><td rowspan="1">5693</td></tr><tr class="passedeven"><td><a href="#m2">TC_remove_001_testremovetocart</a></td><td rowspan="1">1747306937726</td><td rowspan="1">5804</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SauseLabSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ProductsTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">Tests.TestProduct</td><td><a href="#m0">Login</a></td><td rowspan="1">1747310972871</td><td rowspan="1">83</td></tr><tr class="failedeven"><td><a href="#m1">TC_add_001_testaddtocart</a></td><td rowspan="1">1747310972990</td><td rowspan="1">9</td></tr><tr class="failedeven"><td><a href="#m2">TC_remove_001_testremovetocart</a></td><td rowspan="1">1747310973015</td><td rowspan="1">2</td></tr></tbody>
 </table>
-<h2>ProductsTest</h2><h3 id="m0">Tests.TestProduct#Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests.TestProduct#TC_add_001_testaddtocart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Tests.TestProduct#TC_remove_001_testremovetocart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ProductsTest</h2><h3 id="m0">Tests.TestProduct#Login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:94)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:74)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:43)
+	at Pages.LoginPage.&lt;init&gt;(LoginPage.java:17)
+	at Tests.TestProduct.Login(TestProduct.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.TestProduct#TC_add_001_testaddtocart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:94)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:74)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:43)
+	at Pages.ProductsPage.&lt;init&gt;(ProductsPage.java:23)
+	at Tests.TestProduct.TC_add_001_testaddtocart(TestProduct.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.TestProduct#TC_remove_001_testremovetocart</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:94)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:74)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:43)
+	at Pages.ProductsPage.&lt;init&gt;(ProductsPage.java:23)
+	at Tests.TestProduct.TC_remove_001_testremovetocart(TestProduct.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

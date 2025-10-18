@@ -1,6 +1,6 @@
 package Pages;
 
-import static org.testng.Assert.assertEquals;
+
 
 import java.time.Duration;
 

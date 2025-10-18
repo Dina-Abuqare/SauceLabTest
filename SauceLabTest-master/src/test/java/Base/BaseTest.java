@@ -6,10 +6,10 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class BaseTest {
+	
     protected AndroidDriver driver;
 
     @BeforeTest
@@ -38,7 +38,7 @@ public class BaseTest {
 
         } catch (Exception e) {
             System.err.println("Failed to start Appium session: " + e.getMessage());
-            e.printStackTrace(); // This will print the stack trace to console
+            e.printStackTrace(); // This	 will print the stack trace to console
         }
     }
 

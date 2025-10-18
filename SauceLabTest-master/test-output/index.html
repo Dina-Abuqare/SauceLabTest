@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SauseLabSuite" class="navigator-link">
-              <span class="suite-name border-passed">SauseLabSuite</span>
+              <span class="suite-name border-failed">SauseLabSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,31 +92,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-SauseLabSuite" class="hide-methods passed suite-SauseLabSuite"> (hide)</a> <!-- hide-methods passed suite-SauseLabSuite -->
-                      <a href="#" panel-name="suite-SauseLabSuite" class="show-methods passed suite-SauseLabSuite"> (show)</a> <!-- show-methods passed suite-SauseLabSuite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SauseLabSuite" class="hide-methods failed suite-SauseLabSuite"> (hide)</a> <!-- hide-methods failed suite-SauseLabSuite -->
+                      <a href="#" panel-name="suite-SauseLabSuite" class="show-methods failed suite-SauseLabSuite"> (show)</a> <!-- show-methods failed suite-SauseLabSuite -->
                     </span>
-                    <div class="method-list-content passed suite-SauseLabSuite">
+                    <div class="method-list-content failed suite-SauseLabSuite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-SauseLabSuite" title="Tests.TestProduct" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-SauseLabSuite" title="Tests.TestProduct" class="method navigator-link" hash-for-method="TC_add_001_testaddtocart">TC_add_001_testaddtocart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-SauseLabSuite" title="Tests.TestProduct" class="method navigator-link" hash-for-method="TC_remove_001_testremovetocart">TC_remove_001_testremovetocart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-SauseLabSuite -->
+                    </div> <!-- method-list-content failed suite-SauseLabSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -128,9 +128,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SauseLabSuite" class="panel SauseLabSuite">
-          <div class="suite-SauseLabSuite-class-passed">
+          <div class="suite-SauseLabSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">Tests.TestProduct</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -139,6 +139,16 @@
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:94)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:74)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:43)
+	at Pages.LoginPage.&lt;init&gt;(LoginPage.java:17)
+	at Tests.TestProduct.Login(TestProduct.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -146,6 +156,16 @@
                   <a name="TC_add_001_testaddtocart">
                   </a> <!-- TC_add_001_testaddtocart -->
                   <span class="method-name">TC_add_001_testaddtocart</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:94)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:74)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:43)
+	at Pages.ProductsPage.&lt;init&gt;(ProductsPage.java:23)
+	at Tests.TestProduct.TC_add_001_testaddtocart(TestProduct.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -153,10 +173,20 @@
                   <a name="TC_remove_001_testremovetocart">
                   </a> <!-- TC_remove_001_testremovetocart -->
                   <span class="method-name">TC_remove_001_testremovetocart</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Input must be set
+	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:94)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:74)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:43)
+	at Pages.ProductsPage.&lt;init&gt;(ProductsPage.java:23)
+	at Tests.TestProduct.TC_remove_001_testremovetocart(TestProduct.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SauseLabSuite-class-passed -->
+          </div> <!-- suite-SauseLabSuite-class-failed -->
         </div> <!-- panel SauseLabSuite -->
         <div panel-name="test-xml-SauseLabSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -213,20 +243,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'Tests.TestProduct')
-data.setCell(0, 3, 7967);
+data.setCell(0, 3, 83);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_remove_001_testremovetocart')
+data.setCell(1, 1, 'TC_add_001_testaddtocart')
 data.setCell(1, 2, 'Tests.TestProduct')
-data.setCell(1, 3, 5804);
+data.setCell(1, 3, 9);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_add_001_testaddtocart')
+data.setCell(2, 1, 'TC_remove_001_testremovetocart')
 data.setCell(2, 2, 'Tests.TestProduct')
-data.setCell(2, 3, 5693);
+data.setCell(2, 3, 2);
 window.suiteTableData['SauseLabSuite']= { tableData: data, tableDiv: 'times-div-SauseLabSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 94 ms</span>
               <div id="times-div-SauseLabSuite">
               </div> <!-- times-div-SauseLabSuite -->
             </div> <!-- times-div -->
@@ -258,20 +288,26 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Login</span>
-                <span class="method-start">16230 ms</span>
+                <span class="method-start">16763 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_add_001_testaddtocart</span>
-                <span class="method-start">24226 ms</span>
+                <span class="method-start">16882 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_remove_001_testremovetocart</span>
-                <span class="method-start">29925 ms</span>
+                <span class="method-start">16907 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35734 ms</span>
+                <span class="method-start">16915 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
